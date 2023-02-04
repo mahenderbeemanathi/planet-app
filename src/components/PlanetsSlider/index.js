@@ -1,8 +1,7 @@
 // Write your code here
 import Slider from 'react-slick'
 
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
+
 
 import './index.css'
 
@@ -22,9 +21,9 @@ const PlanetsSlider = props => {
     ))
   }
   return (
-    <div className="slider-container">
+    <div data-testid="planets" className="slider-container">
       <h1 className="heading">PLANETS</h1>
-      <Slider data-testid="planets" {...settings}>
+      <Slider {...settings}>
         {renderPlanets()}
       </Slider>
     </div>
